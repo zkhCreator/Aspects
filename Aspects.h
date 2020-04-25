@@ -54,6 +54,7 @@ typedef NS_OPTIONS(NSUInteger, AspectOptions) {
 ///
 /// @note Hooking static methods is not supported.
 /// @return A token which allows to later deregister the aspect.
+/// 方法统一入口
 + (id<AspectToken>)aspect_hookSelector:(SEL)selector
                            withOptions:(AspectOptions)options
                             usingBlock:(id)block
